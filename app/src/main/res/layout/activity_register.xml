@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F3E5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- TITLE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎭 Create Account"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#6A1B9A"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"/>
+
+        <!-- FIRST NAME -->
+        <EditText
+            android:id="@+id/firstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="* First Name"
+            android:textColor="#000000"
+            android:textColorHint="#666666"
+            android:padding="12dp"
+            android:backgroundTint="#6A1B9A"/>
+
+        <!-- MIDDLE NAME -->
+        <EditText
+            android:id="@+id/middleName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Middle Name (Optional)"
+            android:textColor="#000000"
+            android:textColorHint="#666666"
+            android:padding="12dp"
+            android:backgroundTint="#6A1B9A"
+            android:layout_marginTop="16dp"/>
+
+        <!-- LAST NAME -->
+        <EditText
+            android:id="@+id/lastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name (Optional)"
+            android:textColor="#000000"
+            android:textColorHint="#666666"
+            android:padding="12dp"
+            android:backgroundTint="#6A1B9A"
+            android:layout_marginTop="16dp"/>
+
+        <!-- DOB -->
+        <EditText
+            android:id="@+id/dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="* Date of Birth"
+            android:textColor="#000000"
+            android:textColorHint="#666666"
+            android:padding="12dp"
+            android:backgroundTint="#6A1B9A"
+            android:layout_marginTop="16dp"/>
+
+        <!-- PHONE -->
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="* Phone Number"
+            android:inputType="phone"
+            android:textColor="#000000"
+            android:textColorHint="#666666"
+            android:padding="12dp"
+            android:backgroundTint="#6A1B9A"
+            android:layout_marginTop="16dp"/>
+
+        <!-- EMAIL -->
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="* Email"
+            android:inputType="textEmailAddress"
+            android:textColor="#000000"
+            android:textColorHint="#666666"
+            android:padding="12dp"
+            android:backgroundTint="#6A1B9A"
+            android:layout_marginTop="16dp"/>
+
+        <!-- PASSWORD -->
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="* Password"
+            android:inputType="textPassword"
+            android:textColor="#000000"
+            android:textColorHint="#666666"
+            android:padding="12dp"
+            android:backgroundTint="#6A1B9A"
+            android:layout_marginTop="16dp"/>
+
+        <!-- SHOW PASSWORD -->
+        <CheckBox
+            android:id="@+id/showRegisterPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Password"
+            android:textColor="#6A1B9A"
+            android:layout_marginTop="8dp"/>
+
+        <!-- CONFIRM PASSWORD -->
+        <EditText
+            android:id="@+id/confirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="* Confirm Password"
+            android:inputType="textPassword"
+            android:textColor="#000000"
+            android:textColorHint="#666666"
+            android:padding="12dp"
+            android:backgroundTint="#6A1B9A"
+            android:layout_marginTop="16dp"/>
+
+        <!-- PASSWORD STATUS -->
+        <TextView
+            android:id="@+id/passwordStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- ROLE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="* Register As"
+            android:textStyle="bold"
+            android:textColor="#6A1B9A"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"/>
+
+        <!-- SPINNER -->
+        <Spinner
+            android:id="@+id/roleSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:layout_marginTop="10dp"/>
+
+        <!-- REGISTER BUTTON -->
+        <Button
+            android:id="@+id/registerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:backgroundTint="#8E24AA"
+            android:layout_marginTop="28dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

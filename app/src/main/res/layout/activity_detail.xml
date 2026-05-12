@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3E5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- IMAGE -->
+        <ImageView
+            android:id="@+id/detailImage"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:background="#DDDDDD" />
+
+        <!-- NAME -->
+        <TextView
+            android:id="@+id/detailName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Artist Name"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:textColor="#4A148C"
+            android:layout_marginTop="20dp" />
+
+        <!-- ART -->
+        <TextView
+            android:id="@+id/detailArt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Art Form"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#7B1FA2"
+            android:layout_marginTop="10dp" />
+
+        <!-- LOCATION -->
+        <TextView
+            android:id="@+id/detailLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:textSize="20sp"
+            android:textColor="#333333"
+            android:layout_marginTop="10dp" />
+
+        <!-- PHONE -->
+        <TextView
+            android:id="@+id/detailPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9876543210"
+            android:textSize="20sp"
+            android:textColor="#333333"
+            android:layout_marginTop="10dp" />
+
+        <!-- EQUIPMENT -->
+        <TextView
+            android:id="@+id/detailEquipment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Equipment"
+            android:textSize="20sp"
+            android:textColor="#333333"
+            android:layout_marginTop="10dp" />
+
+        <!-- CALL BUTTON -->
+        <Button
+            android:id="@+id/callBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📞 Call Artist"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#00C853"
+            android:layout_marginTop="20dp" />
+
+        <!-- SMS BUTTON -->
+        <Button
+            android:id="@+id/smsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💬 Send SMS"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#1976D2"
+            android:layout_marginTop="14dp" />
+
+        <!-- WHATSAPP BUTTON -->
+        <Button
+            android:id="@+id/whatsappBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🟢 WhatsApp Artist"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#00E676"
+            android:layout_marginTop="14dp" />
+
+        <!-- EMAIL BUTTON -->
+        <Button
+            android:id="@+id/emailBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📧 Email Artist"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF1744"
+            android:layout_marginTop="14dp" />
+
+        <!-- BOOK BUTTON -->
+        <Button
+            android:id="@+id/confirmBookingBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📅 Book Artist"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#6A1B9A"
+            android:layout_marginTop="14dp" />
+
+        <!-- EDIT BUTTON -->
+        <Button
+            android:id="@+id/editBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✏ Edit Artist"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FB8C00"
+            android:visibility="gone"
+            android:layout_marginTop="14dp" />
+
+        <!-- DELETE BUTTON -->
+        <Button
+            android:id="@+id/deleteBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🗑 Delete Artist"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#D50000"
+            android:visibility="gone"
+            android:layout_marginTop="14dp" />
+
+        <!-- FEEDBACK TITLE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Give Rating"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#6A1B9A"
+            android:layout_marginTop="24dp" />
+
+        <!-- RATING BAR -->
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1"
+            android:progressTint="#FFD600"
+            android:progressBackgroundTint="#D3D3D3"
+            android:layout_marginTop="10dp"/>
+
+        <!-- FEEDBACK BOX -->
+        <EditText
+            android:id="@+id/feedbackBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Write feedback"
+            android:textColor="#000000"
+            android:textColorHint="#666666"
+            android:layout_marginTop="12dp" />
+
+        <!-- SUBMIT FEEDBACK -->
+        <Button
+            android:id="@+id/submitFeedbackBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Feedback"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#8E24AA"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="30dp" />
+
+    </LinearLayout>
+
+</ScrollView>

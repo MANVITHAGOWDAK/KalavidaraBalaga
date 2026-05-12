@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F3E5F5">
+
+    <!-- TOOLBAR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6A1B9A"
+        android:padding="18dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🎭 KalavidaraBalaga"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/logoutBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#8E24AA"/>
+    </LinearLayout>
+
+    <!-- SEARCH -->
+    <EditText
+        android:id="@+id/searchBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        android:hint="🔍 Search Artist / Art / Location"
+        android:textColor="#000000"
+        android:textColorHint="#666666"
+        android:padding="14dp"
+        android:textSize="16sp"
+        android:backgroundTint="#6A1B9A"/>
+
+    <!-- FILTER -->
+    <Spinner
+        android:id="@+id/filterSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:background="#FFFFFF"
+        android:padding="12dp"/>
+
+    <!-- ADD BUTTON -->
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="➕ Add Artist"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#7B1FA2"
+        android:layout_margin="14dp"/>
+
+    <!-- BOOKINGS BUTTON -->
+    <Button
+        android:id="@+id/bookingsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📅 My Bookings"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#5E35B1"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"/>
+
+    <!-- NO DATA -->
+    <TextView
+        android:id="@+id/noDataText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Artists Found"
+        android:textSize="18sp"
+        android:textColor="#777777"
+        android:gravity="center"
+        android:padding="20dp"
+        android:visibility="gone"/>
+
+    <!-- RECYCLER -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#F3E5F5"
+    android:padding="24dp">
+
+    <!-- APP LOGO / TITLE -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🎭 KalavidaraBalaga"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:textColor="#6A1B9A"/>
+
+    <!-- SUBTITLE -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connecting Artists &amp; Organizers"
+        android:textSize="18sp"
+        android:textColor="#666666"
+        android:layout_marginTop="16dp"/>
+
+    <!-- LOADING -->
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"/>
+
+</LinearLayout>
